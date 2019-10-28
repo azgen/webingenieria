@@ -1,0 +1,46 @@
+.col-md-4.sidebar-right {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.nav-link.concursos-navbar {
+  color: #333;
+  font-size: 15px;
+  background-color: #f7f7f7;
+  margin-bottom: 2px;
+  height: 50px;
+}
+
+.nav-link.concursos-navbar:hover {
+  color: #fff;
+  font-size: 15px;
+  background-color: #2d89b8;
+  margin-bottom: 2px;
+  height: 50px;
+}
+
+.accordion a {
+  color: #222222;
+  font-size: 18px;
+}
+
+.accordion p {
+  color: #999;
+  font-size: 18px;
+  font-size: 14px;
+}
+
+#accordion-info-concursos .card {
+  margin-bottom: 25px;
+}
+
+.row-llamados {
+  margin-bottom: 60px;
+}
+
+.title-item-concurso {
+  font-family: 'Open Sans';
+  font-size: 30px;
+  color: #111;
+}
+

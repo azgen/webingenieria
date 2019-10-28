@@ -1,0 +1,51 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Concursos{% endblock %}
+
+{% block content %}
+
+<section id="contenido" class="contenido">
+    <div class="container" id="concursos-novedades">
+        <div class="row">
+            
+            <div class="col-md-8 sidebar-right">
+                <div class="row row-llamados">
+                    <div class="col">
+                        <h2 class="title-item-concurso">Llamados Vigentes</h2>
+                        <div role="tablist" id="accordion-1" class="accordion">
+                            
+                            {% for llamado in llamados reversed %}
+                            {% if llamado.is_public %}
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h3 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">UN (1) Cargo de {{llamado.cargo}} Dedicación {{llamado.dedicacion}}</a><a class="btn btn-link" role="button" href="{% url 'some_view' %}">[ Imprimir PDF ]</a></a></h3>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        <p class="card-text">Para cubrir UN (1) cargo de: <b>{{llamado.cargo}}</b> <br>Dedicación <b>{{llamado.dedicacion}}</b><br>Por Asignación Complementaria / Contrato<br><br>Para la asignatura:<br><b>{{llamado.asignatura}}</b><br>(Horarios de clase: martes de 16 a18 hs. y jueves de 18
+                                            a 22 hs.)<br><br>INSCRIPCIÓN: 18/09/2019 al 20/09/2019<br>de 8:00 horas a 11:00 horas<br><br>REQUISITOS: Poseer, como mínimo, 2 años de antiguedad en la docencia universitaria y legajo UNS activo.<br><br>Presentar
+                                            CV y ANTECEDENTES<br>Sector Concursos - Departamento de Ingeniería<br><br>COMISIÓN AD-HOC:<br>Dr. Eduardo A. Bambill<br>Ing. Claudia A. Egidi<br>Ing. Enrique A. Gil<br><br>SUPLENTE:<br>Ing. Martín J. Serralunga<br><br></p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container contenido-evento" id="sociales-evento">
+        <div class="row">
+            <div class="col d-xl-flex justify-content-xl-start align-items-xl-center">
+                <p class="texto-15">Compartir esta información</p>
+            </div>
+            <div class="col-lg-8 social-icons"><a href="#"><i class="icon ion-social-twitter"></i><i class="icon ion-social-instagram-outline"></i><i class="icon ion-social-googleplus"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

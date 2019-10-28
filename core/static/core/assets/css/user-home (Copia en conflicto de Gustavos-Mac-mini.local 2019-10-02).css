@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #373f45;
+  font-weight: 400;
+  display: -webkit-box;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Open Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-family: 'Open Sans', sans serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  text-align: left;
+  letter-spacing: normal;
+  color: #373f45;
+  /*background-color: #f3f6f9;*/
+  margin-bottom: 20px;
+}
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville';
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: 0.75px;
+  color: #212f4f;
+  margin-bottom: 20px;
+  font-family: 'Libre Baskerville';
+}
+
+h2 {
+  font-family: 'Libre Baskerville';
+  font-size: 1.999rem;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: normal;
+  color: #212f4f;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: normal;
+  color: #212f4f;
+}
+
+h4 {
+  font-family: 'Open Sans';
+  font-size: 23px;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: normal;
+  color: #212f4f;
+  font-weight: bold;
+}
+
+h6 {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: normal;
+  color: #212f4f;
+}
+
+/* SITE CONTAINERS */
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* BANNER HOME */
+
+.home-banner {
+  background-color: #f7f7f7;
+  background-size: contain !important;
+  padding: 125px 0;
+  position: relative;
+}
+
+.home-banner:before {
+  /*content: ' ';*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(89,107,119,0.06);
+}
+
+@media (max-width: 992px) {
+  .home-banner-text {
+    max-width: 580px;
+    padding-left: 30px;
+  }
+}
+
+.home-banner h1 {
+  font-size: 40px;
+  color: #212f4f;
+  font-weight: 400;
+  line-height: 56px;
+}
+
+.home-banner h6 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2d89b8;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  margin: 0 0 30px 0;
+}
+
+.home-banner h6 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2d89b8;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  margin: 0 0 30px 0;
+}
+
+.home-banner-h4 {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.home-banner h3 {
+  font-size: 50px;
+  line-height: 1;
+  margin: 0 0 30px 0;
+}
+
+.home-banner .button, .home-banner .button {
+  padding: 15px 25px;
+}
+
+.home-banner .header__subtitle {
+  font-size: 18px;
+  line-height: 29.7px;
+  font-family: 'Open Sans';
+  color: #373f45;
+  margin-bottom: 20px;
+}
+
+.row.oferta-academica {
+  height: 350px;
+}
+
+@media (max-width: 992px) {
+  .row.oferta-academica {
+    height: 350px;
+    margin: 60px auto 20px auto;
+  }
+}
+
+.col-lg-5 {
+  background-color: #fff;
+  margin: 5px;
+  align-items: center;
+}
+
+.col-lg-5 h4 {
+  background-color: transparent;
+  margin: 5px;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* FORMS */
+
+input, select, textarea {
+  background-color: #fff;
+  border: 1px solid #cdd2d6;
+  color: #596b77;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 10px;
+  width: auto;
+}
+
+select:focus, input:focus, textarea:focus {
+  border: 1px solid #2d89b8;
+  outline: none;
+  color: #2d89b8;
+  box-shadow: 0 0 0 3px #f0f1f3;
+}
+
+::-moz-placeholder {
+  color: #b8bec2;
+  opacity: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+::-ms-input-placeholder {
+  color: #b8bec2;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+::-webkit-input-placeholder {
+  color: #b8bec2;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.button.button-light-blue {
+  background-color: #2d89b8;
+  /*padding: 10px 20px;*/
+  margin: 0;
+  padding: 19px 24px 16px 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border-radius: 0;
+}
+
+.button.button-light-blue:hover {
+  background-color: #f9ce21;
+  /*padding: 10px 20px;*/
+  margin: 0;
+  padding: 19px 24px 16px 24px;
+  color: #111;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 15px;
+}
+
+.button {
+  display: inline-block;
+}
+
+.button.button-block {
+  display: block;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+}
+
+.oferta-academica h4 {
+  color: #ffffff;
+  background-color: #382db8;
+  opacity: .75;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 84px;
+  padding: 10px;
+}
+
+.col-sm-12.col-md-5.col-lg-5.d-xl-flex.align-items-xl-start.col-oferta {
+  height: 200px;
+}
+
+@media (max-width: 576px) {
+  .col-sm-12.col-md-5.col-lg-5.d-xl-flex.align-items-xl-start.col-oferta {
+    height: 100px;
+    margin-bottom: 15px;
+  }
+}
+
+/* *** EVENTOS *** */
+
+#eventos {
+  width: 100%;
+  margin: 0;
+  padding: 140px 0;
+}
+
+#estructura {
+  width: 100%;
+  margin: 0;
+  padding: 140px 0;
+}
+
+section {
+  width: 100%;
+  margin: 0;
+  padding: 140px 0;
+}
+
+.bg-blanco {
+  width: 100%;
+  background-color: #fff;
+}
+
+.bg-gris {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+/* *** SECTIONS *** */
+
+.home-section-title {
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-weight: 600;
+}
+
+/* *** NAVBAR *** */
+
+.nav.navbar-nav .nav-item {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 29px;
+  text-align: left;
+  letter-spacing: 0.6px;
+  color: #212f4f;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.dropdown-menu.show {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  text-transform: none;
+  color: #212f4f;
+  border-radius: 0px;
+  background-color: #f7f7f7;
+  box-shadow: 3px 3px 8px #888888;
+}
+
+.dropdown-item:hover {
+  background-color: #ebebeb;
+}
+
+#navbar {
+  background-color: #f7f7f7;
+}
+
+.banner-title {
+  font-family: 'Libre Baskerville';
+  font-size: 40px !important;
+  color: #212f4f;
+}
+
+.bg-inverse {
+  background-color: #fff;
+}
+

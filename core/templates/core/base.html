@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Template Final Ingeniería</title>
+    <link rel="stylesheet" href="{% static 'core/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="{% static 'core/assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/css/-Filterable-Cards-.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/css/Concursos.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/css/Corporate-Footer-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/css/Social-Icons.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/css/Team-Boxed.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/css/user-home.css' %}">
+    <link rel="stylesheet" href="{% static 'core/assets/css/user-landing.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-light navbar-expand-md" id="navbar">
+            <div class="container-fluid"><a class="navbar-brand" href="{% url 'home' %}">Ingeniería UNS</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">institucional</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Historia</a><a class="dropdown-item" role="presentation" href="#">Estructura</a><a class="dropdown-item" role="presentation" href="#">Comisiones Curriculares</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">académicas</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Oferta Académica</a><a class="dropdown-item" role="presentation" href="#">Cursos</a><a class="dropdown-item" role="presentation" href="#">Posgrado</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">investigación y extensión</a>
+                            <div class="dropdown-menu" role="menu">
+                                <h6 class="dropdown-header" role="presentation">Investigación</h6>
+                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">Grupos de Investigación</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a>
+                                <div
+                                    class="dropdown-divider" role="presentation"></div>
+                            <h6 class="dropdown-header" role="presentation">Extensión</h6><a class="dropdown-item" role="presentation" href="#">Convenios</a>
+                            <div class="dropdown-divider" role="presentation"></div>
+            </div>
+            </li>
+            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">concursos</a>
+                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="">Llamados a Inscripción</a><a class="dropdown-item" role="presentation" href="#">Información de Concursos</a><a class="dropdown-item" role="presentation"
+                        href="#">Concursos Finalizados</a>
+                    <h6 class="dropdown-header" role="presentation">Reglamentaciones Docentes</h6>
+                    <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">Profesores</a><a class="dropdown-item" role="presentation" href="#">Asistentes y Ayudantes</a><a class="dropdown-item" role="presentation" href="#">Contratos y Asignaciones complementarias</a>
+                    <div
+                        class="dropdown-divider" role="presentation"></div>
+                <h6 class="dropdown-header" role="presentation">Extensión</h6><a class="dropdown-item" role="presentation" href="https://docs.google.com/forms/d/e/1FAIpQLSd3EeCQsPzn5dcz37u0_D-xhaXx8AoezwMZifqzqct1yoJlNQ/viewform?fbzx=-367663141885583487">Solicitud de Fojas de Servicio</a>
+                <div class="dropdown-divider"
+                    role="presentation"></div>
+                </div>
+            </li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="">eventos</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Alumnos</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link">docentes</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#">intranet</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    
+    {% block content %} {% endblock %}
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h4>Institucional</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Estructura</a></li>
+                        <li><a href="#">Comisiones Curriculares</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Académicas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Oferta Académica</a></li>
+                        <li><a href="#">Cursos</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Investigación y Extensión</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Grupos de Investigación</a></li>
+                        <li><a href="#">Convenios</a></li>
+                    </ul>
+                    <h4>Personal Universitario</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Alumnos</a></li>
+                        <li><a href="#">Docentes</a></li>
+                        <li><a href="#">No Docentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Concursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Praesent gravida</a></li>
+                        <li><a href="#">Praesent egestas</a></li>
+                    </ul>
+                    <h4>Varios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Etiam ornare vestibulum</a></li>
+                        <li><a href="#">Donec tincidunt tempus</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <hr>
+            <div class="footer-legal">
+                <div class="float-md-right region"><a href="#"><img src="{% static 'core/assets/img/united-states-flag.png' %}">United States</a></div>
+                <div class="d-inline-block copyright">
+                    <p class="d-inline-block">Copyright © 2018. All rights reserved.<br></p>
+                </div>
+                <div class="d-inline-block legal-links">
+                    <div class="d-inline-block item">
+                        <h5>Privacy Policy</h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5>Terms of Use</h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5>Legal</h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5>License</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'core/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'core/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/assets/js/bs-animation.js' %}"></script>
+    <script src="{% static 'core/assets/js/-Filterable-Cards-.js' %}"></script>
+    <script src="{% static 'core/assets/js/creative.js' %}"></script>
+    <script src="{% static 'core/assets/js/cambiaestadoactive.js' %}"></script>
+    <script src="{% static 'core/assets/js/Card-Carousel.js' %}"></script>
+</body>
+
+</html>
